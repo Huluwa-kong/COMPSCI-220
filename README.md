@@ -1,6 +1,6 @@
 若您有关于此作业的任何需求，本人主页, 可添加vx：codingtutor 或者qq：122929048
 
-#Computer Science 220SC (2023)
+# Computer Science 220SC (2023)
 
 ## Assignment 3 (Basic graph algorithms and traversals)
 1. Delete a node from a digraph and record number of arcs removed 30 Marks
