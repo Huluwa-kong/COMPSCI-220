@@ -2,6 +2,21 @@
 
 # Computer Science 220SC (2023)
 
+## Assignment 3 (Hashing and Graph Representation)
+
+Problem Statement
+Two programs are required to understand basic hashing techniques. We will use open ad- dressing collision resolution with rightward (increase) probing. For a digraph G, let DS be the concatenation of integers (as strings) from a decreasing sorted degree sequence of G. Program 1: OALP hashing with H1 Program 2: OADH hashing with H1 and   = H2 H1: do middle-squaring on DS.
+
+Let d equal the integer obtained from the three middle digits of DS. (append 0's if length of DS < 3 or even)
+Hash value is the integer denoted by the three middle digits of d2. (also append 0's if needed) H2: do truncation on DS.
+The initial hash value is the integer denoted by the  rst three digits of DS plus one. (prepend 0's if length of DS < 3)
+For subsequential probes decrease this hash value by one until it is one. Input will be a sequence of adjacency lists of digraphs (at most 1000) and we want to hash each to an integer using these two hash functions H1 and H2. Input will follow the adjacency list format as described in the CS220 textbook. Here, the  rst line for eaach diagraph is an integer n indicating the order of the digraph. This is followed by n white space separated lists of (out-) adjacencies for nodes labeled 0 to n 􀀀 1. The last digraph of the sequence will be a digraph of order 0 and this is not to be processed (e.g. not added to hash table). For both programs output a binary string of length 1000, which is your  xed hash table size. The bit at position i denotes that some digraph was (1/true) or was not (0/false) hashed to value i. Output each bit on a single line using characters 0' and 1' and terminated with a newline `nn'. Thus, your program's output will be  xed at 1000 lines (2000 bytes). After experimenting with your programs (on several data sets), can you say which program performs better in practice in hashing random sequence of digraphs? Consider cases where there are few (<100) graphs and many (>800) graphs, with respect to your hash table size.
+Submission and Due Date
+Submit your source code to https://www.automarker.cs.auckland.ac.nz. There will be two test cases provided for each problem. A maximum of 10 submissions is allowed before a penalty of 20% will be applied. The deadline is 23.59pm (automarker time) on the 30th of September. The marks for this assignment is worth 7.5% of your course grade. Some partial credit may be given if you do not achieve \Correct" (green) on the automarker. Note we use plagiarism detection software so do not share any source code with your fellow students, nor use any AI tools (see https://academicintegrity.cs.auckland.ac.nz/).
+
+
+
+
 ## Assignment 3 (Basic graph algorithms and traversals)
 1. Delete a node from a digraph and record number of arcs removed 30 Marks
 For each digraphs in a set of digraphs given as adjacency lists, read in the digraph,
